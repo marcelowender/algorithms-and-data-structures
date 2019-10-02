@@ -25,7 +25,15 @@ public class DynamicArray<T> {
     public void insert(int index, T value) {
         //Check the size
 
+        //The insert algorithm consists in run the array in a kind of reverse mode
+        //The intention here is copy up all elements
+        for (int j = size; j > index; j--) {
+            data[j] = data[j-1];
+        }
+
         //Do the insert
+        data[index] = value;
+        size++;
 
     }
 
