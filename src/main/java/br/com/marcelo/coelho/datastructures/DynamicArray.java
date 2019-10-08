@@ -24,11 +24,13 @@ public class DynamicArray<T> {
 
     public void insert(int index, T value) {
         //Check the size
-
+        if (size == initialCapacity) {
+            resize();
+        }
         //The insert algorithm consists in run the array in a kind of reverse mode
         //The intention here is copy up all elements
         for (int j = size; j > index; j--) {
-            data[j] = data[j-1];
+            data[j] = data[j - 1];
         }
 
         //Do the insert
@@ -38,30 +40,46 @@ public class DynamicArray<T> {
     }
 
     public void delete(int index) {
+        for (int j = index; j < size; j++) {
+            data[j] = data[j + 1];
+        }
+        size--;
     }
 
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
 
-    public boolean contains() {
+    public boolean contains(T value) {
+        for (Object objValue : data) {
+            return value.equals(objValue);
+        }
         return false;
     }
 
     public void resize() {
+        int newCapacity = initialCapacity * 2;
+        Object[] newData = new Object[newCapacity];
+        for (int i = 0; i < initialCapacity; i++) {
+            newData[i] = data[i];
+        }
+        data = newData;
+        initialCapacity = newCapacity;
+
     }
 
     public int size() {
-        for (int i = 0; i < data.length; i++) {
-            if (data[i] == null) {
-                break;
-            }
-            size++;
-        }
         return size;
     }
 
-    public void add() {
+    public void add(T value) {
+        for (int i = 0; i < data.length; i++) {
+            if (data[i] == null) {
+                data[i] = value;
+                size++;
+                break;
+            }
+        }
 
 
     }

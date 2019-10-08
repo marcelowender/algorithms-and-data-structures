@@ -17,12 +17,36 @@ class DynamicArrayTest {
     @Test
     void insertTest() {
         DynamicArray dynamicArray = new DynamicArray(5);
-        dynamicArray.set(0, "a");
-        dynamicArray.set(1, "c");
-        dynamicArray.set(2, "d");
-
-
+        dynamicArray.add("a");
+        dynamicArray.add("c");
+        dynamicArray.add("d");
         dynamicArray.insert(1, "b");
+        assertEquals(dynamicArray.size(), 4);
     }
+
+    @Test
+    void deleteTest() {
+        DynamicArray dynamicArray = new DynamicArray(5);
+        dynamicArray.add("a");
+        dynamicArray.add("b");
+        dynamicArray.add("c");
+        dynamicArray.delete(1);
+        assertEquals(dynamicArray.size(), 2);
+    }
+
+    @Test
+    void isEmptyTest() {
+        DynamicArray dynamicArray = new DynamicArray(5);
+        assertTrue(dynamicArray.isEmpty());
+    }
+
+
+    @Test
+    void containsTest() {
+        DynamicArray dynamicArray = new DynamicArray(5);
+        dynamicArray.add("a");
+        assertTrue(dynamicArray.contains("a"));
+    }
+
 
 }
