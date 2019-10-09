@@ -40,7 +40,7 @@ public class DynamicArray<T> {
     }
 
     public void delete(int index) {
-        for (int j = index; j < size; j++) {
+        for (int j = index; j < size - 1; j++) {
             data[j] = data[j + 1];
         }
         size--;
