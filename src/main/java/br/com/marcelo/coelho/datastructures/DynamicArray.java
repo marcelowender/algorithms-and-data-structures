@@ -1,5 +1,10 @@
 package br.com.marcelo.coelho.datastructures;
 
+
+/**
+ * One of the bigest advanteges in arrays is the capacity to access elements in any position
+ * with the time of O(1)
+ */
 public class DynamicArray<T> {
 
     private Object[] data;
@@ -7,6 +12,8 @@ public class DynamicArray<T> {
     private int initialCapacity;
 
 
+    //Arrays    have fixed capacity
+    //To solve this problem we create the resize method
     public DynamicArray(int initialCapacity) {
         this.initialCapacity = initialCapacity;
         data = new Object[initialCapacity];
