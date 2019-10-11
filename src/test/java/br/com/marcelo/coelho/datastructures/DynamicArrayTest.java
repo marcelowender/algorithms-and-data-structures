@@ -33,7 +33,7 @@ class DynamicArrayTest {
         dynamicArray.add("d");
         dynamicArray.add("e");
         dynamicArray.delete(1);
-        assertEquals(dynamicArray.size(), 2);
+        assertEquals(dynamicArray.size(), 4);
     }
 
     @Test
