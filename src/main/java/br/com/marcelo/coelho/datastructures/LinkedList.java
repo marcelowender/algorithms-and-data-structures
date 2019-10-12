@@ -17,11 +17,8 @@ public class LinkedList<T> {
     private int size;
     private Node<T> head;
 
-    public LinkedList() {
-        this.head = null;
-    }
-
     public void add(T value) {
+        java.util.LinkedList
         Node newNode = new Node(value);
         if (head == null) {
             head = newNode;
