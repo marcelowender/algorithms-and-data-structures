@@ -15,5 +15,15 @@ package br.com.marcelo.coelho.datastructures;
 public class LinkedList {
 
 
+    private static class Node<T> {
+        T data;
+        Node next;
+
+        public Node(T value) {
+            this.data = value;
+        }
+
+    }
+
 
 }
