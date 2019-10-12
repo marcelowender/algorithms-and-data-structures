@@ -22,7 +22,7 @@ For this I am using the tool.
     - [x] Update
     - [x] Resize
  - [ ] Linked List
-     - [ ] Add Front
+     - [x] Add Element
      - [ ] Insert   
  - [ ] Big O Notation
  - [ ] Stacks & Queues
