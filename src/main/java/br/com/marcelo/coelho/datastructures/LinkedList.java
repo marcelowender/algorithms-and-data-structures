@@ -15,10 +15,29 @@ package br.com.marcelo.coelho.datastructures;
 public class LinkedList<T> {
 
     private int size;
+    private Node<T> head;
+
 
     public void add(T value) {
         Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        Node aux = head.getNext();
+        if (aux == null) {
+            head.setNext(newNode);
+        }
+        while (aux != null) {
+            if (aux.getNext() == null) {
+                aux.setNext(newNode);
+                break;
+            }
+            aux = aux.getNext();
+        }
+
         size++;
+
     }
 
     public int size() {
@@ -27,12 +46,26 @@ public class LinkedList<T> {
     }
 
     private static class Node<T> {
-        T data;
-        Node next;
+        private T data;
+        private Node next;
 
         public Node(T value) {
             this.data = value;
         }
+
+        public Node<T> getNext() {
+            return this.next;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
+
+
+        public T getData() {
+            return this.data;
+        }
+
 
     }
 
