@@ -11,9 +11,11 @@ class LinkedListTest {
         linkedList.add("B");
         linkedList.add("C");
         linkedList.add("D");
+        linkedList.add("E");
+        linkedList.add("F");
 
 
-        Assertions.assertEquals(linkedList.size(), 4);
+        Assertions.assertEquals(linkedList.size(), 6);
 
 
     }

@@ -17,23 +17,20 @@ public class LinkedList<T> {
     private int size;
     private Node<T> head;
 
+    public LinkedList() {
+        this.head = null;
+    }
 
     public void add(T value) {
         Node newNode = new Node(value);
         if (head == null) {
             head = newNode;
-            return;
-        }
-        Node aux = head.getNext();
-        if (aux == null) {
-            head.setNext(newNode);
-        }
-        while (aux != null) {
-            if (aux.getNext() == null) {
-                aux.setNext(newNode);
-                break;
+        } else {
+            Node aux = head;
+            while (aux.hasNext()) {
+                aux = aux.getNext();
             }
-            aux = aux.getNext();
+            aux.setNext(newNode);
         }
 
         size++;
@@ -67,6 +64,9 @@ public class LinkedList<T> {
         }
 
 
+        public boolean hasNext() {
+            return this.next != null;
+        }
     }
 
 
