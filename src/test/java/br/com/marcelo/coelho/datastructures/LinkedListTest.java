@@ -3,22 +3,17 @@ package br.com.marcelo.coelho.datastructures;
 import org.junit.jupiter.api.*;
 
 class LinkedListTest {
-    private LinkedList linkedList;
-
-    @BeforeAll
-    public void init() {
-        linkedList = new LinkedList();
-    }
 
     @Test
     public void addFront() {
+        LinkedList linkedList = new LinkedList();
         linkedList.add("A");
         linkedList.add("B");
         linkedList.add("C");
         linkedList.add("D");
 
 
-        Assertions.assertEquals(linkedList.size(), 4 );
+        Assertions.assertEquals(linkedList.size(), 4);
 
 
     }
