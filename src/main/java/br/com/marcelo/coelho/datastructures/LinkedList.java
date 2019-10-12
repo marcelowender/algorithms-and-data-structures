@@ -12,8 +12,19 @@ package br.com.marcelo.coelho.datastructures;
  * <p>
  * Ideal to use in Stacks or Queues
  */
-public class LinkedList {
+public class LinkedList<T> {
 
+    private int size;
+
+    public void add(T value) {
+        Node newNode = new Node(value);
+        size++;
+    }
+
+    public int size() {
+
+        return this.size;
+    }
 
     private static class Node<T> {
         T data;

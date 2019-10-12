@@ -12,6 +12,14 @@ class LinkedListTest {
 
     @Test
     public void addFront() {
+        linkedList.add("A");
+        linkedList.add("B");
+        linkedList.add("C");
+        linkedList.add("D");
+
+
+        Assertions.assertEquals(linkedList.size(), 4 );
+
 
     }
 
