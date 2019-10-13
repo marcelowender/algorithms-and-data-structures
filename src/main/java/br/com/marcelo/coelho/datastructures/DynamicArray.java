@@ -80,14 +80,11 @@ public class DynamicArray<T> {
     }
 
     public void add(T value) {
-        for (int i = 0; i < data.length; i++) {
-            if (data[i] == null) {
-                data[i] = value;
-                size++;
-                break;
-            }
+        if (this.size == initialCapacity) {
+            resize();
         }
-
+        data[size] = value;
+        size++;
 
     }
 }
