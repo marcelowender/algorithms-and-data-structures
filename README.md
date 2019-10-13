@@ -12,6 +12,9 @@ With the idea of fixing the content learned in these studies, I am using the tec
 For this I am using the tool. 
 [Studie](https://studieapp.com)
 
+Using this tool I created a course with flashcards and various questions to validate the knowledge gained throughout the modules.
+We can see [HERE](https://studieapp.com/my/courses/290) the course
+
 
 ## The content in the course
 
