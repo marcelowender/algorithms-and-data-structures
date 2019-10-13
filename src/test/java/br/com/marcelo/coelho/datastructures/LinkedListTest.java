@@ -7,31 +7,41 @@ class LinkedListTest {
     @Test
     public void addFront() {
         LinkedList linkedList = new LinkedList();
-        linkedList.add("A");
-        linkedList.add("B");
-        linkedList.add("C");
-        linkedList.add("D");
-        linkedList.add("E");
-        linkedList.add("F");
-
-
-        Assertions.assertEquals(linkedList.size(), 6);
+        linkedList.addBack("B");
+        linkedList.addBack("C");
+        linkedList.addFront("A");
+        Assertions.assertEquals("A", linkedList.getFront());
 
 
     }
 
     @Test
     public void getFirst() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.addBack("A");
+        linkedList.addBack("B");
+        linkedList.addBack("C");
+        Assertions.assertEquals("A", linkedList.getFirst());
 
     }
 
     @Test
     public void getLast() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.addBack("A");
+        linkedList.addBack("B");
+        linkedList.addBack("C");
+        Assertions.assertEquals("C", linkedList.getLast());
 
     }
 
     @Test
     public void addBack() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.addBack("A");
+        linkedList.addBack("B");
+        linkedList.addBack("C");
+        Assertions.assertEquals(linkedList.size(), linkedList.getBack());
 
     }
 
