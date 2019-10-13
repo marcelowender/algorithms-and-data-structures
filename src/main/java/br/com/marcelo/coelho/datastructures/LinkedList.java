@@ -17,7 +17,7 @@ public class LinkedList<T> {
     private int size;
     private Node<T> head;
 
-    public void add(T value) {
+    public void addBack(T value) {
         Node newNode = new Node(value);
         if (head == null) {
             head = newNode;
