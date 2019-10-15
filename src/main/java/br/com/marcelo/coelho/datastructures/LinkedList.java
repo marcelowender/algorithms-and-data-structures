@@ -38,6 +38,16 @@ public class LinkedList<T> {
         return this.head.data;
     }
 
+    public T getLast() {
+        Node aux = head;
+        while (aux.hasNext()) {
+            aux = aux.getNext();
+
+        }
+
+        return (T) aux.getData();
+    }
+
 
     public void addFront(T value) {
         Node newNode = new Node(value);
