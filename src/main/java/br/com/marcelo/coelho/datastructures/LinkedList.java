@@ -33,6 +33,16 @@ public class LinkedList<T> {
 
     }
 
+    public void addFront(T value) {
+        Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+        }
+
+        newNode.setNext(newNode);
+        head = newNode;
+    }
+
     public int size() {
 
         return this.size;
