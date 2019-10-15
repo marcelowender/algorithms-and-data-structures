@@ -21,7 +21,7 @@ class LinkedListTest {
         linkedList.addBack("A");
         linkedList.addBack("B");
         linkedList.addBack("C");
-//        Assertions.assertEquals("A", linkedList.getFirst());
+        Assertions.assertEquals("A", linkedList.getFirst());
 
     }
 
@@ -31,7 +31,7 @@ class LinkedListTest {
         linkedList.addBack("A");
         linkedList.addBack("B");
         linkedList.addBack("C");
-//        Assertions.assertEquals("C", linkedList.getLast());
+       Assertions.assertEquals("C", linkedList.getLast());
 
     }
 
@@ -41,7 +41,7 @@ class LinkedListTest {
         linkedList.addBack("A");
         linkedList.addBack("B");
         linkedList.addBack("C");
-//        Assertions.assertEquals(linkedList.size(), linkedList.getBack());
+//        Assertions.assertEquals(linkedList.size(), linkedList.getLast());
 
     }
 
