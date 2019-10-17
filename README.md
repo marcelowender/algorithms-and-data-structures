@@ -25,7 +25,10 @@ We can see [HERE](https://studieapp.com/my/courses/290) the course
     - [x] Update
     - [x] Resize
  - [ ] Linked List
-     - [x] Add Element
+     - [x] Add Back
+     - [x] Add Front
+     - [x] Get First
+     - [x] Get Last
      - [ ] Insert   
  - [ ] Big O Notation
  - [ ] Stacks & Queues
