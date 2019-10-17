@@ -28,10 +28,10 @@ class LinkedListTest {
     @Test
     public void getLast() {
         LinkedList linkedList = new LinkedList();
-        linkedList.addBack("A");
-        linkedList.addBack("B");
-        linkedList.addBack("C");
-       Assertions.assertEquals("C", linkedList.getLast());
+        linkedList.addFront("A");
+        linkedList.addFront("B");
+        linkedList.addFront("C");
+       Assertions.assertEquals("A", linkedList.getLast());
 
     }
 
