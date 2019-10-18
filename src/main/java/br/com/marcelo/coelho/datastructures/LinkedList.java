@@ -28,7 +28,6 @@ public class LinkedList<T> {
             }
             aux.setNext(newNode);
         }
-
         size++;
 
     }
@@ -42,7 +41,6 @@ public class LinkedList<T> {
         Node aux = head;
         while (aux.hasNext()) {
             aux = aux.getNext();
-
         }
 
         return (T) aux.getData();
@@ -53,14 +51,14 @@ public class LinkedList<T> {
         Node newNode = new Node(value);
         if (head == null) {
             head = newNode;
+        } else {
+            newNode.setNext(head);
+            head = newNode;
         }
-
-        newNode.setNext(head);
-        head = newNode;
+        size++;
     }
 
     public int size() {
-
         return this.size;
     }
 
@@ -80,11 +78,9 @@ public class LinkedList<T> {
             this.next = next;
         }
 
-
         public T getData() {
             return this.data;
         }
-
 
         public boolean hasNext() {
             return this.next != null;
