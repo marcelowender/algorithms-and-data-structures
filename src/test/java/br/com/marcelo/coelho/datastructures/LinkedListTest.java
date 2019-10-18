@@ -41,7 +41,7 @@ class LinkedListTest {
         linkedList.addBack("A");
         linkedList.addBack("B");
         linkedList.addBack("C");
-//        Assertions.assertEquals(linkedList.size(), linkedList.getLast());
+        Assertions.assertEquals("C", linkedList.getLast());
 
     }
 
