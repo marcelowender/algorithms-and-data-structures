@@ -47,6 +47,24 @@ public class LinkedList<T> {
     }
 
 
+    /**
+     * Exercise extracted from
+     * https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1
+     * Your task is to complete the given function getCount(), which takes head reference as argument and should return the length of linked list.
+     *
+     * @return length of linked list
+     */
+    public int getCount() {
+        int numberOfNodes = 0;
+        Node aux = head;
+        while (aux != null) {
+            aux = aux.getNext();
+            numberOfNodes++;
+        }
+        return numberOfNodes;
+    }
+
+
     public void addFront(T value) {
         Node newNode = new Node(value);
         if (head == null) {
