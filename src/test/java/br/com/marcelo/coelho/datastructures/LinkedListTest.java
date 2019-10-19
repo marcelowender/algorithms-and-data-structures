@@ -31,7 +31,7 @@ class LinkedListTest {
         linkedList.addFront("A");
         linkedList.addFront("B");
         linkedList.addFront("C");
-       Assertions.assertEquals("A", linkedList.getLast());
+        Assertions.assertEquals("A", linkedList.getLast());
 
     }
 
@@ -42,6 +42,16 @@ class LinkedListTest {
         linkedList.addBack("B");
         linkedList.addBack("C");
         Assertions.assertEquals("C", linkedList.getLast());
+
+    }
+
+    @Test
+    public void getCount() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.addBack("A");
+        linkedList.addBack("B");
+        linkedList.addBack("C");
+        Assertions.assertEquals(3, linkedList.getCount());
 
     }
 
