@@ -35,7 +35,8 @@ I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org
      - [x] Add Front
      - [x] Get First
      - [x] Get Last
-     - [ ] Insert   
+     - [ ] Remove
+     - [ ] Contains   
  - [ ] Big O Notation
  - [ ] Stacks & Queues
  - [ ] Hash Tables
