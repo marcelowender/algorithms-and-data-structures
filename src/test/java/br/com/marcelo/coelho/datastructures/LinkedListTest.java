@@ -55,4 +55,15 @@ class LinkedListTest {
 
     }
 
+    @Test
+    public void clear() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.addBack("A");
+        linkedList.addBack("B");
+        linkedList.addBack("C");
+        linkedList.clear();
+        Assertions.assertEquals(0, linkedList.getCount());
+
+    }
+
 }
