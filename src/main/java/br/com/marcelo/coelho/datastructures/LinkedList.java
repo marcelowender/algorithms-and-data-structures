@@ -65,6 +65,11 @@ public class LinkedList<T> {
     }
 
 
+    public void clear() {
+        head = null;
+        size = 0;
+    }
+
     public void addFront(T value) {
         Node newNode = new Node(value);
         if (head == null) {
