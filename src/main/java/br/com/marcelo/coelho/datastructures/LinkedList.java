@@ -86,6 +86,7 @@ public class LinkedList<T> {
         if (aux.getData().equals(value)) {
             head = aux.getNext();
             size--;
+            return;
         } else {
             while (aux.hasNext()) {
                 if (aux.getNext().getData().equals(value)) {
@@ -94,12 +95,8 @@ public class LinkedList<T> {
                     return;
                 }
                 aux = aux.getNext();
-
             }
-
         }
-
-
     }
 
     public int size() {
