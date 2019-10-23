@@ -36,7 +36,10 @@ I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org
      - [x] Get First
      - [x] Get Last
      - [x] Remove
-     - [x] Contains   
+     - [x] Contains
+     - [ ] Add between nodes | Extra content
+ - [ ] Doubly Linked List *[Extra Content](https://www.geeksforgeeks.org/doubly-linked-list/)
+     - [ ] Add   
  - [ ] Big O Notation
  - [ ] Stacks & Queues
  - [ ] Hash Tables
