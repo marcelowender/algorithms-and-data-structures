@@ -30,13 +30,13 @@ I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org
     - [x] Delete
     - [x] Update
     - [x] Resize
- - [ ] Linked List
+ - [x] Linked List
      - [x] Add Back
      - [x] Add Front
      - [x] Get First
      - [x] Get Last
-     - [ ] Remove
-     - [ ] Contains   
+     - [x] Remove
+     - [x] Contains   
  - [ ] Big O Notation
  - [ ] Stacks & Queues
  - [ ] Hash Tables
