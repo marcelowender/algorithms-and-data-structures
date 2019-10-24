@@ -41,9 +41,9 @@ class LinkedListTest {
         linkedList.addBack("A");
         linkedList.addBack("B");
         linkedList.addBack("C");
-        linkedList.addBack("D");
-        linkedList.addBack("E");
-        Assertions.assertEquals("E", linkedList.getLast());
+        linkedList.addBack(1);
+        linkedList.addBack(true);
+        Assertions.assertEquals(true, linkedList.getLast());
 
     }
 
@@ -56,7 +56,7 @@ class LinkedListTest {
         linkedList.addBack("D");
         linkedList.addBack("E");
         linkedList.delete("E");
-        Assertions.assertEquals("E", linkedList.getLast());
+        Assertions.assertEquals("D", linkedList.getLast());
 
     }
 
