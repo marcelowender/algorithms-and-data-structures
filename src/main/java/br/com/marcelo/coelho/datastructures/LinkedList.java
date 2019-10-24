@@ -104,8 +104,8 @@ public class LinkedList<T> {
     public void print() {
         Node aux = head;
         while (aux.hasNext()) {
-            System.out.println(aux.data);
-            aux = aux.next;
+            System.out.println(aux.getData());
+            aux = aux.getNext();
         }
         System.out.println("------");
     }
