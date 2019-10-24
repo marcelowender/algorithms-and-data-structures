@@ -97,6 +97,17 @@ public class LinkedList<T> {
                 aux = aux.getNext();
             }
         }
+
+
+    }
+
+    public void print() {
+        Node aux = head;
+        while (aux.hasNext()) {
+            System.out.println(aux.data);
+            aux = aux.next;
+        }
+        System.out.println("------");
     }
 
     public int size() {
