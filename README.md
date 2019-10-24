@@ -37,6 +37,7 @@ I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org
      - [x] Get Last
      - [x] Remove
      - [x] Contains
+     - [ ] Print elements
      - [ ] Add between nodes | Extra content
  - [ ] Doubly Linked List *[Extra Content](https://www.geeksforgeeks.org/doubly-linked-list/)
      - [ ] Add   
