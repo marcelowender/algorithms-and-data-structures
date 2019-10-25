@@ -61,6 +61,19 @@ class LinkedListTest {
     }
 
     @Test
+    public void contais() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.addBack("A");
+        linkedList.addBack("B");
+        linkedList.addBack("E");
+
+        Assertions.assertTrue(linkedList.contains("B"));
+        Assertions.assertFalse(linkedList.contains("C"));
+
+    }
+
+
+    @Test
     public void getCount() {
         LinkedList linkedList = new LinkedList();
         linkedList.addBack("A");
