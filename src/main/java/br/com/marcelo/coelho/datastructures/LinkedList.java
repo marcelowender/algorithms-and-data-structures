@@ -32,9 +32,20 @@ public class LinkedList<T> {
 
     }
 
-
     public T getFirst() {
         return this.head.data;
+    }
+
+    public boolean contains(T value) {
+        Node aux = head;
+        while (aux.getNext() != null) {
+            aux = aux.getNext();
+            if (aux.getData().equals(value)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public T getLast() {
