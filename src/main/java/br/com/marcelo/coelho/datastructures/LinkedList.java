@@ -32,6 +32,25 @@ public class LinkedList<T> {
 
     }
 
+
+    public void addValueIndex(T value, int index) {
+
+        Node aux = head;
+        int numberOfNodes = 0;
+        while (aux.hasNext()) {
+            numberOfNodes++;
+            if (numberOfNodes == index) {
+                Node newNode = new Node(value);
+                newNode.setNext(aux.getNext());
+                aux.setNext(newNode);
+                return;
+            }
+            aux = aux.getNext();
+
+        }
+
+    }
+
     public T getFirst() {
         return this.head.data;
     }
@@ -114,7 +133,7 @@ public class LinkedList<T> {
 
     public void print() {
         Node aux = head;
-        while (aux.hasNext()) {
+        while (aux != null) {
             System.out.println(aux.getData());
             aux = aux.getNext();
         }
