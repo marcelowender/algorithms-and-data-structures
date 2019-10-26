@@ -74,6 +74,19 @@ class LinkedListTest {
 
 
     @Test
+    public void addValueInIndex() {
+        LinkedList linkedList = new LinkedList();
+        linkedList.addBack("A");
+        linkedList.addBack("B");
+        linkedList.addBack("D");
+        linkedList.addValueIndex("C", 2);
+        linkedList.print();
+        Assertions.assertTrue(linkedList.contains("D"));
+
+    }
+
+
+    @Test
     public void getCount() {
         LinkedList linkedList = new LinkedList();
         linkedList.addBack("A");
