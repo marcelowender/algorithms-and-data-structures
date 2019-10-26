@@ -18,7 +18,7 @@ We can see [HERE](https://studieapp.com/my/courses/290) the course
 
 ![Spaced Repetition](https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png)
 
-I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org/user/marcelowender/) the course  to fix the course knowledge
+I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org/user/marcelowender/profile) the course  to fix the course knowledge
 
 
 
