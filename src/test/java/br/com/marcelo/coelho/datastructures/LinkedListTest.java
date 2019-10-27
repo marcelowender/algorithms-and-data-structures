@@ -81,7 +81,7 @@ class LinkedListTest {
         linkedList.addBack("D");
         linkedList.addValueIndex("C", 2);
         linkedList.print();
-        Assertions.assertTrue(linkedList.contains("D"));
+        Assertions.assertEquals(2, linkedList.indexOf("C"));
 
     }
 
