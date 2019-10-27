@@ -55,6 +55,21 @@ public class LinkedList<T> {
         return this.head.data;
     }
 
+
+    public int indexOf(T value) {
+        Node aux = head;
+        int indexElement = 0;
+        while (aux != null) {
+            if (aux.getData().equals(value)) {
+                return indexElement;
+            }
+            indexElement++;
+            aux = aux.getNext();
+        }
+        return indexElement;
+    }
+
+
     public boolean contains(T value) {
         Node aux = head;
         while (aux.getNext() != null) {
