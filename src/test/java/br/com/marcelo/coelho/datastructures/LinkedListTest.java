@@ -78,11 +78,13 @@ class LinkedListTest {
         LinkedList linkedList = new LinkedList();
         linkedList.addBack("A");
         linkedList.addBack("B");
-        linkedList.addBack("D");
-        linkedList.addValueIndex("C", 2);
-        linkedList.print();
-        Assertions.assertEquals(2, linkedList.indexOf("C"));
-
+        linkedList.addBack("C");
+        linkedList.addValueIndex("1", 0);
+        linkedList.addValueIndex("2", 1);
+        linkedList.addValueIndex("3", 2);
+        Assertions.assertEquals(0, linkedList.indexOf("1"));
+        Assertions.assertEquals(1, linkedList.indexOf("2"));
+        Assertions.assertEquals(2, linkedList.indexOf("3"));
     }
 
 
