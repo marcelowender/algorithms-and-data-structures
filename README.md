@@ -38,6 +38,7 @@ I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org
      - [x] Remove
      - [x] Contains
      - [x] Print elements
+     - [x] IndexOf 
      - [x] Add between nodes | Extra content
  - [ ] Doubly Linked List *[Extra Content](https://www.geeksforgeeks.org/doubly-linked-list/)
      - [ ] Add   
