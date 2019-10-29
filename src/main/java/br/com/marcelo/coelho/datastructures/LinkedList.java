@@ -35,10 +35,15 @@ public class LinkedList<T> {
 
     public void addValueIndex(T value, int index) {
 
+        int numberOfNodes = 1;
+
+        if (index == 0) {
+            addFront(value);
+            return;
+        }
+
         Node aux = head;
-        int numberOfNodes = 0;
-        while (aux.hasNext()) {
-            numberOfNodes++;
+        while (aux != null) {
             if (numberOfNodes == index) {
                 Node newNode = new Node(value);
                 newNode.setNext(aux.getNext());
@@ -46,6 +51,7 @@ public class LinkedList<T> {
                 return;
             }
             aux = aux.getNext();
+            numberOfNodes++;
 
         }
 
