@@ -20,10 +20,10 @@ public class LinkedList<T> {
     public void addBack(T value) {
         Node newNode = new Node(value);
         if (head == null) {
-            head = newNode;
+            head = newNode;//O(1)
         } else {
             Node aux = head;
-            while (aux.hasNext()) {
+            while (aux.hasNext()) {//O(n)
                 aux = aux.getNext();
             }
             aux.setNext(newNode);
