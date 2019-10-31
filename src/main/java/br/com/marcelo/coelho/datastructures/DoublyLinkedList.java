@@ -3,6 +3,9 @@ package br.com.marcelo.coelho.datastructures;
 //TODO List advantages and disadvantages
 
 /**
+ * The intention here is understood what is the difference between DLL and SLL
+ * When we can use DLL
+ *
  * Advantage:<br>
  * <p>
  * Disadvantage:
