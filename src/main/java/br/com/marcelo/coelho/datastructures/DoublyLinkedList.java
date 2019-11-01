@@ -15,7 +15,6 @@ public class DoublyLinkedList<T> {
     private int size;
     private Node<T> head;
 
-
     public void addBack(T value) {
 
 
@@ -33,16 +32,13 @@ public class DoublyLinkedList<T> {
         return null;
     }
 
-
     public T getLast() {
         return null;
     }
 
-
     public void delete(T value) {
 
     }
-
 
     public int indexOf(T value) {
         return 0;
@@ -52,16 +48,13 @@ public class DoublyLinkedList<T> {
         return false;
     }
 
-
     public int getCount() {
         return 0;
     }
 
-
     public void clear() {
 
     }
-
 
     public void print() {
     }
@@ -73,7 +66,6 @@ public class DoublyLinkedList<T> {
     public boolean isEmpty() {
         return true;
     }
-
 
     private static class Node<T> {
         private T data;
