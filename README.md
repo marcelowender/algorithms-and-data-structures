@@ -31,17 +31,34 @@ I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org
     - [x] Update
     - [x] Resize
  - [x] Linked List
-     - [x] Add Back
-     - [x] Add Front
-     - [x] Get First
-     - [x] Get Last
-     - [x] Remove
+     - [x] AddBack
+     - [x] AddFront
+     - [x] AddValueIndex
+     - [x] GetFirst
+     - [x] GetLast
+     - [x] Delete
+     - [x] IndexOf
      - [x] Contains
-     - [x] Print elements
-     - [x] IndexOf 
+     - [x] GetCount
+     - [x] Clear
+     - [x] Print
+     - [x] Size
+     - [x] IsEmpty
      - [x] Add between nodes | Extra content
  - [ ] Doubly Linked List *[Extra Content](https://www.geeksforgeeks.org/doubly-linked-list/)
-     - [ ] Add   
+     - [ ] AddBack
+     - [ ] AddFront
+     - [ ] AddValueIndex
+     - [ ] GetFirst
+     - [ ] GetLast
+     - [ ] Delete
+     - [ ] IndexOf
+     - [ ] Contains
+     - [ ] GetCount
+     - [ ] Clear
+     - [ ] Print
+     - [ ] Size
+     - [ ] IsEmpty
  - [x] Big O Notation
  - [ ] Stacks & Queues
  - [ ] Hash Tables
