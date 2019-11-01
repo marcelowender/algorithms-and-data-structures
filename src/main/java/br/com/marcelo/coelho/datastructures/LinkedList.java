@@ -32,6 +32,16 @@ public class LinkedList<T> {
 
     }
 
+    public void addFront(T value) {
+        Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+        } else {
+            newNode.setNext(head);
+            head = newNode;
+        }
+        size++;
+    }
 
     public void addValueIndex(T value, int index) {
 
@@ -61,33 +71,6 @@ public class LinkedList<T> {
         return this.head.data;
     }
 
-
-    public int indexOf(T value) {
-        Node aux = head;
-        int indexElement = 0;
-        while (aux != null) {
-            if (aux.getData().equals(value)) {
-                return indexElement;
-            }
-            indexElement++;
-            aux = aux.getNext();
-        }
-        return indexElement;
-    }
-
-
-    public boolean contains(T value) {
-        Node aux = head;
-        while (aux.getNext() != null) {
-            aux = aux.getNext();
-            if (aux.getData().equals(value)) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
     public T getLast() {
         Node aux = head;
         while (aux.hasNext()) {
@@ -95,41 +78,6 @@ public class LinkedList<T> {
         }
 
         return (T) aux.getData();
-    }
-
-
-    /**
-     * Exercise extracted from
-     * https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1
-     * Your task is to complete the given function getCount(), which takes head reference as argument and should return the length of linked list.
-     *
-     * @return length of linked list
-     */
-    public int getCount() {
-        int numberOfNodes = 0;
-        Node aux = head;
-        while (aux != null) {
-            aux = aux.getNext();
-            numberOfNodes++;
-        }
-        return numberOfNodes;
-    }
-
-
-    public void clear() {
-        head = null;
-        size = 0;
-    }
-
-    public void addFront(T value) {
-        Node newNode = new Node(value);
-        if (head == null) {
-            head = newNode;
-        } else {
-            newNode.setNext(head);
-            head = newNode;
-        }
-        size++;
     }
 
     public void delete(T value) {
@@ -150,6 +98,53 @@ public class LinkedList<T> {
         }
 
 
+    }
+
+    public int indexOf(T value) {
+        Node aux = head;
+        int indexElement = 0;
+        while (aux != null) {
+            if (aux.getData().equals(value)) {
+                return indexElement;
+            }
+            indexElement++;
+            aux = aux.getNext();
+        }
+        return indexElement;
+    }
+
+    public boolean contains(T value) {
+        Node aux = head;
+        while (aux.getNext() != null) {
+            aux = aux.getNext();
+            if (aux.getData().equals(value)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Exercise extracted from
+     * https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1
+     * Your task is to complete the given function getCount(), which takes head reference as argument and should return the length of linked list.
+     *
+     * @return length of linked list
+     */
+    public int getCount() {
+        int numberOfNodes = 0;
+        Node aux = head;
+        while (aux != null) {
+            aux = aux.getNext();
+            numberOfNodes++;
+        }
+        return numberOfNodes;
+    }
+
+    public void clear() {
+        head = null;
+        size = 0;
     }
 
     public void print() {
