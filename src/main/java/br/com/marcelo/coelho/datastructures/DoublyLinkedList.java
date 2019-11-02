@@ -14,10 +14,18 @@ public class DoublyLinkedList<T> {
 
     private int size;
     private Node<T> head;
+    private Node<T> tail;
 
     public void addBack(T value) {
-
-
+        Node newNode = new Node(value, head, null);
+        if (head != null) {
+            head.prev = newNode;
+        }
+        head = newNode;
+        if (tail == null) {
+            tail = newNode;
+        }
+        size++;
     }
 
     public void addFront(T value) {
