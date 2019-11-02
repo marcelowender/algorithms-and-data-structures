@@ -76,6 +76,12 @@ public class DoublyLinkedList<T> {
             this.data = value;
         }
 
+        public Node(T value, Node<T> next, Node<T> prev) {
+            this.data = value;
+            this.next = next;
+            this.prev = prev;
+        }
+
         public Node<T> getNext() {
             return this.next;
         }
