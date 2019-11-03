@@ -3,12 +3,19 @@ package br.com.marcelo.coelho.datastructures;
 //TODO List advantages and disadvantages
 
 /**
+ * This study is strongly based on https://www.geeksforgeeks.org/doubly-linked-list/
  * The intention here is understood what is the difference between DLL and SLL
  * When we can use DLL
  * <p>
  * Advantage:<br>
+ *     A DLL can be traversed in both forward and backward direction <br>
+ *     The delete operation in DLL is more efficient if pointer to the node to be deleted is given <br>
+ *     We can quickly insert a new node before a given node.
  * <p>
  * Disadvantage:
+ *  Every node of DLL Require extra space for an previous pointer (There is XOR implementation to solve this) <br>
+ *  All operations require an extra pointer previous to be maintained
+ *
  */
 public class DoublyLinkedList<T> {
 
