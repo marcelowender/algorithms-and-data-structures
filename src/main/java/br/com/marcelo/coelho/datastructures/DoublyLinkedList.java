@@ -8,43 +8,54 @@ package br.com.marcelo.coelho.datastructures;
  * When we can use DLL
  * <p>
  * Advantage:<br>
- *     A DLL can be traversed in both forward and backward direction <br>
- *     The delete operation in DLL is more efficient if pointer to the node to be deleted is given <br>
- *     We can quickly insert a new node before a given node.
+ * A DLL can be traversed in both forward and backward direction <br>
+ * The delete operation in DLL is more efficient if pointer to the node to be deleted is given <br>
+ * We can quickly insert a new node before a given node.
  * <p>
  * Disadvantage:
- *  Every node of DLL Require extra space for an previous pointer (There is XOR implementation to solve this) <br>
- *  All operations require an extra pointer previous to be maintained
- *
+ * Every node of DLL Require extra space for an previous pointer (There is XOR implementation to solve this) <br>
+ * All operations require an extra pointer previous to be maintained
  */
 public class DoublyLinkedList<T> {
 
     private int size;
     private Node<T> head;
-    private Node<T> tail;
 
-    public void addBack(T value) {
-        Node newNode = new Node(value, head, null);
-        if (head != null) {
-            head.prev = newNode;
-        }
-        head = newNode;
-        if (tail == null) {
-            tail = newNode;
-        }
-        size++;
-    }
 
     public void addFront(T value) {
 
+        if (head == null) {
+            head = new Node(value);
+            return;
+        }
+
+        Node newNode = new Node(value);
+        newNode.prev = null;
+        newNode.next = head;
+
+
+        head.prev = newNode;
+        head = newNode;
+
     }
+
+    public void addBack(T value) {
+        if (head == null) {
+            head = new Node(value);
+            return;
+        }
+
+
+
+    }
+
 
     public void addValueIndex(T value, int index) {
 
     }
 
     public T getFirst() {
-        return null;
+        return head.getData();
     }
 
     public T getLast() {
@@ -91,11 +102,6 @@ public class DoublyLinkedList<T> {
             this.data = value;
         }
 
-        public Node(T value, Node<T> next, Node<T> prev) {
-            this.data = value;
-            this.next = next;
-            this.prev = prev;
-        }
 
         public Node<T> getNext() {
             return this.next;
