@@ -19,8 +19,16 @@ class DoublyLinkedListTest {
     }
 
     @Test
-    @Ignore
     void addBack() {
+        DoublyLinkedList list = new DoublyLinkedList();
+        list.addBack("A");
+        Assertions.assertEquals("A", list.getLast());
+        list.addBack("B");
+        Assertions.assertEquals("B", list.getLast());
+        list.addBack("C");
+        Assertions.assertEquals("C", list.getLast());
+        list.addBack("D");
+        Assertions.assertEquals("D", list.getLast());
     }
 
     @Test

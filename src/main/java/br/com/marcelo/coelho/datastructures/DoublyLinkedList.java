@@ -45,6 +45,15 @@ public class DoublyLinkedList<T> {
             return;
         }
 
+        Node aux = head;
+        while (aux.next != null) {
+            aux = aux.next;
+        }
+        Node newNode = new Node(value);
+        aux.next = newNode;
+
+        newNode.prev = aux;
+        newNode.next = null;
 
 
     }
@@ -59,7 +68,13 @@ public class DoublyLinkedList<T> {
     }
 
     public T getLast() {
-        return null;
+        Node aux = head;
+        while (aux.getNext() != null) {
+
+            aux = aux.getNext();
+        }
+
+        return (T) aux.getData();
     }
 
     public void delete(T value) {
