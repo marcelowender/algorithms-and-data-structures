@@ -81,6 +81,7 @@ public class DoublyLinkedList<T> {
     public void delete(T value) {
         if (head.data.equals(value)) {
             head = head.next;
+            head.prev = null;
             return;
         }
         Node aux = head;
