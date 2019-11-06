@@ -32,6 +32,19 @@ class DoublyLinkedListTest {
     }
 
     @Test
+    void delete() {
+        DoublyLinkedList list = new DoublyLinkedList();
+        list.addBack("A");
+        list.addBack("B");
+        list.addBack("C");
+        list.addBack("D");
+        list.delete("A");
+        list.delete("C");
+        Assertions.assertEquals("B", list.getFirst());
+
+    }
+
+    @Test
     @Ignore
     void addValueIndex() {
     }
@@ -44,11 +57,6 @@ class DoublyLinkedListTest {
     @Test
     @Ignore
     void getLast() {
-    }
-
-    @Test
-    @Ignore
-    void delete() {
     }
 
     @Test
