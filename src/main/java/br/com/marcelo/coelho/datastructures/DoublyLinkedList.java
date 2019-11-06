@@ -7,13 +7,13 @@ package br.com.marcelo.coelho.datastructures;
  * The intention here is understood what is the difference between DLL and SLL
  * When we can use DLL
  * <p>
- * Advantage:<br>
- * A DLL can be traversed in both forward and backward direction <br>
- * The delete operation in DLL is more efficient if pointer to the node to be deleted is given <br>
+ * - Advantage:<br>
+ * A DLL can be traversed in both forward and backward direction <br><br>
+ * The delete operation in DLL is more efficient if pointer to the node to be deleted is given <br><br>
  * We can quickly insert a new node before a given node.
  * <p>
- * Disadvantage:
- * Every node of DLL Require extra space for an previous pointer (There is XOR implementation to solve this) <br>
+ * - Disadvantage:<br>
+ * Every node of DLL Require extra space for an previous pointer (There is XOR implementation to solve this) <br><br>
  * All operations require an extra pointer previous to be maintained
  */
 public class DoublyLinkedList<T> {
@@ -77,15 +77,28 @@ public class DoublyLinkedList<T> {
         return (T) aux.getData();
     }
 
-    public void delete(T value) {
 
+    public void delete(T value) {
+        if (head.data.equals(value)) {
+            head = head.next;
+            return;
+        }
+        Node aux = head;
+        while (aux != null && !aux.data.equals(value)) {
+            aux = aux.next;
+        }
+
+        if (aux.next != null) {
+            aux.next.prev = aux.prev;
+        }
+        aux.prev.next = aux.next;
     }
 
     public int indexOf(T value) {
         return 0;
     }
 
-    public boolean contains(T value) {
+    public boolean contains(T value, boolean direction) {
         return false;
     }
 
