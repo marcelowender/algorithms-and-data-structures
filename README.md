@@ -46,11 +46,11 @@ I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org
      - [x] IsEmpty
      - [x] Add between nodes | Extra content
  - [ ] Doubly Linked List *[Extra Content](https://www.geeksforgeeks.org/doubly-linked-list/)
-     - [ ] AddBack
-     - [ ] AddFront
-     - [ ] AddValueIndex
-     - [ ] GetFirst
-     - [ ] GetLast
+     - [x] AddBack
+     - [x] AddFront
+     - [x] AddValueIndex
+     - [x] GetFirst
+     - [x] GetLast
      - [ ] Delete
      - [ ] IndexOf
      - [ ] Contains
