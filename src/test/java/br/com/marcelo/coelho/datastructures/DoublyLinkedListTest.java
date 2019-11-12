@@ -80,8 +80,14 @@ class DoublyLinkedListTest {
     }
 
     @Test
-    @Ignore
     void print() {
+        DoublyLinkedList list = new DoublyLinkedList();
+        list.addBack("1");
+        list.addBack("2");
+        list.addBack("3");
+        list.addBack("4");
+
+        list.print();
     }
 
     @Test

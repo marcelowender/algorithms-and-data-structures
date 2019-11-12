@@ -69,12 +69,11 @@ public class DoublyLinkedList<T> {
 
     public T getLast() {
         Node aux = head;
-        while (aux.getNext() != null) {
-
-            aux = aux.getNext();
+        while (aux.next != null) {
+            aux = aux.next;
         }
 
-        return (T) aux.getData();
+        return (T) aux.data;
     }
 
 
@@ -104,18 +103,34 @@ public class DoublyLinkedList<T> {
     }
 
     public int getCount() {
-        return 0;
+        int numberOfNodes = 0;
+        Node aux = head;
+        while (aux != null) {
+            numberOfNodes++;
+            aux = aux.next;
+        }
+        return numberOfNodes;
     }
 
     public void clear() {
-
+        head = null;
+        size = 0;
     }
 
     public void print() {
+
+        StringBuilder list = new StringBuilder("NULL");
+        Node aux = head;
+        while (aux != null) {
+            list.append("<=>" + aux.data);
+            aux = aux.next;
+        }
+        list.append("<=>NULL");
+        System.out.println(list.toString());
     }
 
     public int size() {
-        return 0;
+        return size;
     }
 
     public boolean isEmpty() {
