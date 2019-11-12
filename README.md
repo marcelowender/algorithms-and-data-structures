@@ -54,9 +54,9 @@ I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org
      - [ ] Delete
      - [ ] IndexOf
      - [ ] Contains
-     - [ ] GetCount
-     - [ ] Clear
-     - [ ] Print
+     - [x] GetCount
+     - [x] Clear
+     - [x] Print
      - [ ] Size
      - [ ] IsEmpty
  - [x] Big O Notation
