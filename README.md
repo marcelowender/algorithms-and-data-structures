@@ -51,16 +51,22 @@ I used the exercises of the site  [GeeksForGeeks](https://auth.geeksforgeeks.org
      - [x] AddValueIndex
      - [x] GetFirst
      - [x] GetLast
-     - [ ] Delete
+     - [x] Delete
      - [ ] IndexOf
      - [ ] Contains
      - [x] GetCount
      - [x] Clear
      - [x] Print
-     - [ ] Size
-     - [ ] IsEmpty
  - [x] Big O Notation
- - [ ] Stacks & Queues
+ - [ ] Queues 
+     - [ ] FIFO - First In First Out [Concepts]
+     - [ ] Add
+     - [ ] Remove
+ - [ ] Stack 
+     - [ ] LIFO - Last In First Out [Concepts]
+     - [ ] Peek
+     - [ ] Push
+     - [ ] Pop
  - [ ] Hash Tables
  - [ ] Binary Trees
  - [ ] Binary Heaps
