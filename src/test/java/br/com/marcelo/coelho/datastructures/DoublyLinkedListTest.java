@@ -50,16 +50,6 @@ class DoublyLinkedListTest {
     }
 
     @Test
-    void getFirst() {
-
-    }
-
-    @Test
-    @Ignore
-    void getLast() {
-    }
-
-    @Test
     @Ignore
     void indexOf() {
     }
@@ -90,13 +80,5 @@ class DoublyLinkedListTest {
         list.print();
     }
 
-    @Test
-    @Ignore
-    void size() {
-    }
 
-    @Test
-    @Ignore
-    void isEmpty() {
-    }
 }
