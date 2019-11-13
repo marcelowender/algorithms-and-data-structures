@@ -129,9 +129,6 @@ public class DoublyLinkedList<T> {
         System.out.println(list.toString());
     }
 
-    public int size() {
-        return size;
-    }
 
     public boolean isEmpty() {
         return true;
