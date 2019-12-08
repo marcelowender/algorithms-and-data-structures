@@ -27,6 +27,14 @@ public class Queue<T> {
     }
 
 
+    public void remove() {
+        if (head == null) {
+            return;
+        }
+
+        head = head.next;
+    }
+
 
     private static class Node<T> {
         private T data;
