@@ -8,5 +8,51 @@ package br.com.marcelo.coelho.datastructures;
  * The one way to remove elements in this list is removing the first element
  * the implementation remove() remove one element from HEAD.
  */
-public class Queue {
+public class Queue<T> {
+
+
+    private Node head;
+    private Node tail;
+
+    public void add(T data) {
+        Node newNode = new Node(data);
+        if (tail != null) {
+            tail.setNext(newNode);
+        }
+        tail = newNode;
+        if (head == null) {
+            head = tail;
+        }
+
+    }
+
+
+
+    private static class Node<T> {
+        private T data;
+        private Node next;
+
+        public Node(T value) {
+            this.data = value;
+        }
+
+        public Node<T> getNext() {
+            return this.next;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
+
+        public T getData() {
+            return this.data;
+        }
+
+        public boolean hasNext() {
+            return this.next != null;
+        }
+    }
 }
+
+
+
